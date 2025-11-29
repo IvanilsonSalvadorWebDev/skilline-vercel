@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skilline</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js">
+  <link rel="stylesheet" crossorigin href="/assets/index-DEFPZrma.css">
+</head>
+<body>
+<header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="data:image/png;base64,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" class="heroBack" alt="Skilline logo">
+            </div>
+
+            <div class="nav_right_links" id="navRightLinks">
+                <nav class="nav" id="navMenu">
+                    <a href="#">Casa</a>
+                    <a href="#">Carreiras</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Sobre nós</a>
+                </nav>
+
+                <div class="auth-buttons">
+                    <button class="login">Entrar</button>
+                    <button class="signup">Increver</button>
+                </div>
+            </div>
+            
+            <div class="menu-mobile" onclick="toggleMenu()">
+                ☰
+            </div>
+        </div>
+    </header>
+
+<section class="hero">
+    <div class="hero-text">
+        <h1><span>Estudar</span> Online agora é muito mais fácil</h1>
+<p>Skilline é uma plataforma interessante que lhe ensinará de uma forma mais interativa.</p>
+
+        <div class="hero-buttons">
+            <button class="btn-primary">Registe-se gratuitamente</button>
+            <button class="btn-secondary"><span class="info-play-btn2"> ▶</span> Veja como funciona</button>
+        </div>
+    </div>
+
+    <div class="hero-image">
+        <img src="/assets/header-pic-BMFq1PQs.png" alt="Student smiling holding books">
+    </div>
+</section>
+
+
+<section class="trusted">
+    <p class="trusted-text">Aprovado por mais de 5.000 empresas em todo o mundo.</p>
+
+    <div class="logos">
+        <img src="data:image/png;base64,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" alt="Google logo">
+        <img src="data:image/png;base64,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" alt="Netflix logo">
+        <img src="data:image/png;base64,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" alt="Airbnb logo">
+        <img src="data:image/png;base64,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" alt="Amazon logo">
+        <img src="data:image/png;base64,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" alt="Facebook logo">
+        <img src="data:image/png;base64,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" alt="Grab logo">
+    </div>
+</section>
+
+
+<section class="all-in-one">
+    <h2>Software em nuvem tudo em um.</h2>
+    <p class="description">O Skilline é um poderoso pacote de software online que combina <br> todas as ferramentas necessárias para gerir uma escola ou um escritório com sucesso.</p>
+
+    <div class="features">
+        <!-- Feature 1 -->
+        <div class="feature-card">
+            <div class="icon">
+                <img src="/assets/blue-R7x5QoiD.png" width="" alt="Billing icon">
+            </div>
+            <h3>Faturação, emissão de faturas e contratos online</h3>
+            <p>Controle de forma simples e segura das transações financeiras e jurídicas da sua organização. Envie faturas e contratos personalizados.</p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="feature-card">
+            <div class="icon">
+                <img src="icon2.png" alt="Calendar icon">
+            </div>
+            <h3>Agendamento e controlo de assiduidade simplificados</h3>
+            <p>Agendar e reservar salas de aula num ou mais campos. Manter registos detalhados da assiduidade dos alunos.</p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="feature-card">
+            <div class="icon">
+                <img src="icon3.png" alt="Customer tracking icon">
+            </div>
+            <h3>Rastreamento de Clientes</h3>
+            <p>Automatize e acompanhe os e-mails para indivíduos ou grupos. O sistema integrado do Skilline ajuda a organizar a sua organização.</p>
+        </div>
+    </div>
+</section>
+
+<section class="bloc-skill">
+  <div class="bloc-skill__wrapper">
+    <h2 class="bloc-skill__title">
+      O que é a <span class="bloc-skill__title-highlight">Skilline?</span>
+    </h2>
+
+    <p class="bloc-skill__subtitle">
+      O Skilline é uma plataforma que permite aos educadores criar aulas online onde podem:
+armazenar o material do curso online; gerir tarefas, questionários e testes; monitorar
+prazos de entrega, notas e fornecer feedback aos alunos, tudo num só lugar.
+    </p>
+
+    <div class="bloc-skill__cards">
+      <!-- Card 1 -->
+      <article class="skill-card">
+        <img
+          src="/assets/skilline1-DTGqmQDJ.jpg"
+          alt="For instructors"
+          class="skill-card__image"
+        />
+        <div class="skill-card__overlay skill-card__overlay--left">
+          <h3 class="skill-card__heading">FOR INSTRUCTORS</h3>
+          <button class="skill-card__btn skill-card__btn--light">
+            Comece uma aula hoje mesmo
+          </button>
+        </div>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="skill-card">
+        <img
+          src="/assets/skilline2-B5h-tWxl.jpg"
+          alt="For students"
+          class="skill-card__image"
+        />
+        <div class="skill-card__overlay skill-card__overlay--right">
+          <h3 class="skill-card__heading">FOR STUDENTS</h3>
+          <button class="skill-card__btn skill-card__btn--primary">
+            Introduza o código de acesso
+          </button>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section-info" id="section-info">
+    <div class="info-bottom">
+        <div class="info-bottom__text">
+            <h2 class="info-bottom__title">
+                Tudo o que pode fazer numa sala de aula física, pode fazer com a <span class="info-highlight">Skilline</span>
+            </h2>
+            <p class="info-bottom__desc">
+                O software de gestão escolar da Skilline ajuda as escolas tradicionais e online a gerir horários, assiduidade, pagamentos e salas de aula virtuais, tudo num sistema seguro baseado na nuvem.
+            </p>
+            <a href="#" class="info-bottom__link">Saber mais</a>
+        </div>
+
+        <div class="info-bottom__image">
+          <iframe width="600" style="border-radius: 4em;"  class="iframe_video" height="420" src="https://www.youtube.com/embed/VomOzeE7Z-k?si=3LGHq6aSbNs3wp3R" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+</section>
+
+<section class="section-feature-ui">
+    <div class="feature-content">
+        <div class="feature-image">
+            <img src="/assets/uorFeatures-qIBXfl8A.png" alt="Interface de usuário de sala de aula virtual com múltiplos participantes.">
+        </div>
+
+        <div class="feature-text">
+            <h2 class="feature-title">
+                A user interface <span class="highlight-text">desenhada</span><br> para a sala de aula
+            </h2>
+
+            <ul class="feature-list">
+                <li class="feature-item">
+                    <div class="icon-square icon-blue-orange"></div>
+                    <p>Os professores não se perdem na visualização em grelha e têm um espaço dedicado no pódio.</p>
+                </li>
+                <li class="feature-item">
+                    <div class="icon-square icon-orange-blue"></div>
+                    <p>Os monitores e apresentadores podem ser deslocados para a frente da sala de aula.</p>
+                </li>
+                <li class="feature-item">
+                    <div class="icon-square icon-person"></div>
+                    <p>Os professores podem visualizar facilmente todos os alunos e os dados da turma ao mesmo tempo.</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+<section class="section-feature-tools">
+    <div class="tools-content">
+        <div class="tools-text">
+            <h2 class="tools-title">
+                <span class="highlight-text">ferramentas</span> para professores<br> e estudantes
+            </h2>
+            <p class="tools-description">
+               O Class possui um conjunto dinâmico de ferramentas de ensino criadas para serem implementadas e utilizadas durante as aulas. Os professores podem distribuir as tarefas em tempo real para que os alunos as completem e enviem.
+            </p>
+        </div>
+
+        <div class="tools-image">
+            <img src="/assets/tools-CvP-yzrs.png" alt="Estudante pensando e segurando cadernos, cercada por ícones de ferramentas.">
+        </div>
+    </div>
+</section>
+
+
+<section class="section-assessments">
+    <div class="assessments-content">
+        <div class="assessment-visual">
+
+                <div class="question-image-container">
+                    <img src="/assets/assessments-DJAUmdVJ.png" alt="Cena de Veneza, Itália, com gondoleiros e a igreja Santa Maria della Salute.">
+                </div>
+
+        </div>
+
+        <div class="assessments-text">
+            <h2 class="assessments-title">
+                Avaliações,<br> <span class="highlight-text">questionários</span>, Tests
+            </h2>
+            <p class="assessments-description">
+                Crie facilmente tarefas, questionários e testes ao vivo. Os resultados dos alunos são automaticamente introduzidos no livro de notas online.
+            </p>
+        </div>
+    </div>
+</section>
+
+
+<section class="section-double-feature">
+    <div class="feature-block block-management">
+        <div class="feature-text">
+            <h2 class="feature-title">
+                <span class="highlight-text">Gestão de turmas</span><br> Ferramentas para Educadores
+            </h2>
+            <p class="feature-description">
+                O Class oferece ferramentas para ajudar a gerir a turma, como a lista de alunos, o controlo de assiduidade e muito mais. Com o livro de notas, os professores podem rever e corrigir testes e questionários em tempo real.
+            </p>
+        </div>
+
+        <div class="feature-image">
+            <img src="/assets/classManagement-MfVl8qwr.png" alt="Interface de GradeBook mostrando notas dos alunos">
+        </div>
+    </div>
+    
+    <div class="feature-block block-discussions">
+        <div class="feature-image">
+            <img src="/assets/classManagement2-a7oEoO_T.png" alt="Interface de vídeo chamada com discussão privada">
+        </div>
+
+        <div class="feature-text">
+            <h2 class="feature-title">
+                Discussões <br> <span class="highlight-text">um a um</span>
+            </h2>
+            <p class="feature-description">
+                Os professores e os auxiliares de ação educativa podem conversar com os alunos em privado sem sair do ambiente Zoom.</p>
+            
+        </div>
+    </div>
+    
+
+      <div class="cta-button-container">
+          <a href="#" class="btn-more-features">Ver mais funcionalidades</a>
+      </div>
+
+</section>
+
+<section class="section-integrations">
+    <div class="integrations-content">
+        <div class="integration-logos">
+            <div class="logo-row">
+                <div class="logo-item">
+                    <img src="/assets/image2-V_WiHvUL.png" alt="OneDrive logo">
+                    <p>OneDrive</p>
+                </div>
+                <div class="logo-item">
+                    <img src="/assets/image5-DVmvEBYp.png" alt="Dropbox logo">
+                    </div>
+            </div>
+            <div class="logo-row">
+                <div class="logo-item">
+                    <img src="/assets/image3-C5ZwoWid.png" alt="Google Drive logo">
+                    <p>Google Drive</p>
+                </div>
+                <div class="logo-item">
+                    <img src="/assets/image6-CY4YEGwh.png" alt="Microsoft Teams logo">
+                </div>
+            </div>
+        </div>
+
+        <div class="integrations-text">
+            <p class="subtitle">INTEGRAÇÕES</p>
+            <h2 class="integrations-title">
+            Mais de 200 ferramentas educativas e <span class="highlight-text">integrações</span> de plataformas
+            </h2>
+            <p class="integrations-description">
+               O Schoology tem todas as ferramentas de que a sua sala de aula necessita e vem pré-integrado com mais de 200 ferramentas, sistemas de informação para estudantes (SIS) e plataformas educacionais.
+</p>
+            
+            <div class="cta-button-container">
+                <a href="#" class="btn-all-integrations">Ver todas as integrações</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="section-testimonials">
+    <div class="testimonials-content">
+        
+        <div class="testimonials-info">
+            <p class="subtitle">DEPOIMENTO</p>
+            <h2 class="testimonials-title">O que dizem?</h2>
+            
+            <p class="testimonials-description">
+                A Skilline recebeu mais de 100 mil avaliações positivas dos nossos utilizadores em todo o mundo. <br>
+Alguns alunos e professores foram muito ajudados pela Skilline.
+            </p>
+            
+            <p class="testimonials-cta">
+                Você também? Por favor, dê a sua opinião.
+            </p>
+
+            <a href="#" class="btn-write-assessment">
+               Escreva a sua avaliação <span class="arrow-icon">→</span>
+            </a>
+        </div>
+
+        <div class="testimonial-card-visual">
+            <img src="/assets/testimunials-D_EcVrmJ.png" alt="Depoimento de Gloria Rose, com foto de uma estudante sorrindo." class="responsive-image">
+        </div>
+    </div>
+</section>
+
+
+<section class="section-news-resources">
+    <div class="news-header">
+        <h2 class="news-main-title">Últimas notícias e recursos</h2>
+        <p class="news-subtitle">Veja os desenvolvimentos que ocorreram com a Skillines no mundo.</p>
+    </div>
+
+    <div class="news-main-grid">
+        <article class="news-card news-card--main">
+            <div class="news-image-container">
+                <img src="/assets/zoom-DwDxY5sm.png" alt="Pessoa em laptop participando de uma reunião de videochamada com uma xícara de café ao lado." class="responsive-image">
+            </div>
+            
+            <span class="news-tag">NOTÍCIAS</span>
+            <h3 class="news-title">Class acrescenta 30 milhões de dólares ao seu balanço para uma solução de tecnologia educativa compatível com o Zoom.</h3>
+            <p class="news-description">
+                O Class, lançado há menos de um ano pelo cofundador do Blackboard, Michael Chasen, integra exclusivamente...
+            </p>
+            <a href="#" class="news-link">Leia mais</a>
+        </article>
+
+        <div class="news-secondary-list">
+            
+            <article class="news-card news-card--small">
+                <div class="news-image-container news-image-container--small">
+                    <img src="/assets/kidsZoom-DhbQZLwW.webp" alt="Pessoa segurando um tablet com a etiqueta 'PRESS RELEASE'." class="responsive-image">
+                </div>
+                <div class="news-text-content">
+                    <h3 class="news-title">Class Technologies Inc. conclui ronda de financiamento Série A de 30 milhões de dólares para satisfazer a elevada procura.</h3>
+                    <p class="news-description">A Class Technologies Inc., a empresa que criou o Class...</p>
+                </div>
+            </article>
+
+            <article class="news-card news-card--small">
+                <div class="news-image-container news-image-container--small">
+                    <img src="/assets/zoom1-DFZRwqOE.jpg" alt="Pessoa vista por trás em frente a um laptop mostrando uma tela de videochamada." class="responsive-image">
+                </div>
+                <div class="news-text-content">
+                    <h3 class="news-title">Os primeiros investidores do Zoom estão a apostar milhões numa versão melhorada do Zoom para as escolas.</h3>
+                    <p class="news-description">O Zoom nunca foi criado para ser um produto de consumo. No entanto, o...</p>
+                    <span class="news-tag news-tag--small">NOTÍCIAS</span>
+                </div>
+            </article>
+
+            <article class="news-card news-card--small">
+                <div class="news-image-container news-image-container--small">
+                    <img src="/assets/class-for-zoom-Bwpt3p-2.png" alt="Tela de videochamada mostrando pessoas e um cachorro em uma sala de aula online." class="responsive-image">
+                </div>
+                <div class="news-text-content">
+                    <h3 class="news-title">Ex-CEO da Blackboard angaria 16 milhões de dólares para levar recursos de LMS às salas de aula da Zoom.</h3>
+                    <p class="news-description">Este ano, os investidores obtiveram grandes retornos financeiros ao apostarem na Zoom...</p>
+                    <span class="news-tag news-tag--small">NOTÍCIAS</span>
+                </div>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+<footer class="main-footer">
+    <div class="footer-content">
+        <div class="footer-header">
+            <div class="footer-logo">
+                <img src="data:image/png;base64,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" alt="Skilline logo" class="logo-image">
+            </div>
+            <p class="footer-subtitle">Aula virtual pelo Zoom</p>
+        </div>
+
+        <div class="footer-newsletter">
+            <p class="newsletter-title">Subscreva a nossa newsletter para receber o boletim informativo.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Your Email" class="email-input">
+                <button type="submit" class="subscribe-btn">Inscreva-se</button>
+            </form>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-links">
+                <a href="#">Carreiras</a>
+                <a href="#">Política de privacidade</a>
+                <a href="#">Termos e condições</a>
+            </div>
+            <p class="footer-copyright">
+                © 2021 Class Technologies Inc.
+            </p>
+        </div>
+    </div>
+</footer>
+
+
+
+<script>
+function toggleMenu() {
+    // 1. Pega o elemento que contém a navegação e os botões
+    const navLinks = document.getElementById('navRightLinks');
+    
+    // 2. Adiciona ou remove a classe 'active'
+    // A classe 'active' é a que aplica os estilos de menu aberto no CSS
+    navLinks.classList.toggle('active');
+}
+
+// Opcional: Fechar o menu ao clicar em um link
+document.addEventListener('DOMContentLoaded', () => {
+    const navLinksContainer = document.getElementById('navRightLinks');
+    const links = navLinksContainer.querySelectorAll('a');
+
+    links.forEach(link => {
+        link.addEventListener('click', () => {
+            // Remove a classe 'active' após o clique (apenas se estiver em modo mobile)
+            if (window.innerWidth <= 900) {
+                navLinksContainer.classList.remove('active');
+            }
+        });
+    });
+});
+</script>
+
+</body>
+</html>
