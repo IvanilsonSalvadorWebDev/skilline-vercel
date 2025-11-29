@@ -1,8 +1,35 @@
 {
-  "devDependencies": {
-    "vite": "^7.2.4"
+  "name": "exit",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/IvanilsonSalvadorWebDev/skilline-vercel#readme",
+  "bugs": {
+    "url": "https://github.com/IvanilsonSalvadorWebDev/skilline-vercel/issues"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IvanilsonSalvadorWebDev/skilline-vercel.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "app.js",
   "scripts": {
     "build": "vite build"
+  },
+  "dependencies": {
+    "esbuild": "^0.25.12",
+    "fdir": "^6.5.0",
+    "nanoid": "^3.3.11",
+    "picocolors": "^1.1.1",
+    "picomatch": "^4.0.3",
+    "postcss": "^8.5.6",
+    "rollup": "^4.53.3",
+    "source-map-js": "^1.2.1",
+    "tinyglobby": "^0.2.15"
+  },
+  "devDependencies": {
+    "vite": "^7.2.4"
   }
+ 
 }
