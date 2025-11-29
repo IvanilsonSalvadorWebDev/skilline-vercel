@@ -2013,11 +2013,15 @@ body {
     }
 
     .nav.open {
+        
+        position: relative;
         display: flex;
     }
 
     .auth-buttons {
-        display: none;
+        
+        position: absolute;
+        display: flex;
     }
 
     .menu-mobile {

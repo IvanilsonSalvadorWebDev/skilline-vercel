@@ -5,46 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skilline</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/mobileNav.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js">
 </head>
 <body>
-
 <header class="header">
-    <div class="container">
-        <div class="logo">
-            <img src="assets/img/logo.png" class="heroBack" alt="Skilline logo">
-        </div>
+        <div class="container">
+            <div class="logo">
+                <img src="assets/img/logo.png" class="heroBack" alt="Skilline logo">
+            </div>
 
-        <div class="nav_right_links">
-          <nav class="nav" id="navMenu">
-            <a href="#">Home</a>
-            <a href="#">Careers</a>
-            <a href="#">Blog</a>
-            <a href="#">About us</a>
-        </nav>
+            <div class="nav_right_links" id="navRightLinks">
+                <nav class="nav" id="navMenu">
+                    <a href="#">Casa</a>
+                    <a href="#">Carreiras</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Sobre nós</a>
+                </nav>
 
-        <div class="auth-buttons">
-            <button class="login">Login</button>
-            <button class="signup">Sign Up</button>
+                <div class="auth-buttons">
+                    <button class="login">Entrar</button>
+                    <button class="signup">Increver</button>
+                </div>
+            </div>
+            
+            <div class="menu-mobile" onclick="toggleMenu()">
+                ☰
+            </div>
         </div>
-        </div>
-        
-
-        <div class="menu-mobile" onclick="toggleMenu()">
-            ☰
-        </div>
-    </div>
-</header>
-
+    </header>
 
 <section class="hero">
     <div class="hero-text">
-        <h1><span>Studying</span> Online is now<br> much easier</h1>
-        <p>Skilline is an interesting platform that will teach you in a more interactive way.</p>
+        <h1><span>Estudar</span> Online agora é muito mais fácil</h1>
+<p>Skilline é uma plataforma interessante que lhe ensinará de uma forma mais interativa.</p>
 
         <div class="hero-buttons">
-            <button class="btn-primary">Join for free</button>
-            <button class="btn-secondary"><span class="info-play-btn2"> ▶</span> Watch how it works</button>
+            <button class="btn-primary">Registe-se gratuitamente</button>
+            <button class="btn-secondary"><span class="info-play-btn2"> ▶</span> Veja como funciona</button>
         </div>
     </div>
 
@@ -55,7 +53,7 @@
 
 
 <section class="trusted">
-    <p class="trusted-text">Trusted by 5,000+ Companies Worldwide</p>
+    <p class="trusted-text">Aprovado por mais de 5.000 empresas em todo o mundo.</p>
 
     <div class="logos">
         <img src="./assets/img/google-2015 1.png" alt="Google logo">
@@ -69,8 +67,8 @@
 
 
 <section class="all-in-one">
-    <h2>All-In-One Cloud Software.</h2>
-    <p class="description">Skilline is one powerful online software suite that combines all the tools needed to run a successful school or office.</p>
+    <h2>Software em nuvem tudo em um.</h2>
+    <p class="description">O Skilline é um poderoso pacote de software online que combina <br> todas as ferramentas necessárias para gerir uma escola ou um escritório com sucesso.</p>
 
     <div class="features">
         <!-- Feature 1 -->
@@ -78,8 +76,8 @@
             <div class="icon">
                 <img src="./assets/img/blue.png" width="" alt="Billing icon">
             </div>
-            <h3>Online Billing, Invoicing, & Contracts</h3>
-            <p>Simple and secure control of your organization’s financial and legal transactions. Send customized invoices and contracts.</p>
+            <h3>Faturação, emissão de faturas e contratos online</h3>
+            <p>Controle de forma simples e segura das transações financeiras e jurídicas da sua organização. Envie faturas e contratos personalizados.</p>
         </div>
 
         <!-- Feature 2 -->
@@ -87,8 +85,8 @@
             <div class="icon">
                 <img src="icon2.png" alt="Calendar icon">
             </div>
-            <h3>Easy Scheduling & Attendance Tracking</h3>
-            <p>Schedule and reserve classrooms at one campus or multiple campuses. Keep detailed records of student attendance.</p>
+            <h3>Agendamento e controlo de assiduidade simplificados</h3>
+            <p>Agendar e reservar salas de aula num ou mais campos. Manter registos detalhados da assiduidade dos alunos.</p>
         </div>
 
         <!-- Feature 3 -->
@@ -96,8 +94,8 @@
             <div class="icon">
                 <img src="icon3.png" alt="Customer tracking icon">
             </div>
-            <h3>Customer Tracking</h3>
-            <p>Automate and track emails to individuals or groups. Skilline’s built-in system helps organize your organization.</p>
+            <h3>Rastreamento de Clientes</h3>
+            <p>Automatize e acompanhe os e-mails para indivíduos ou grupos. O sistema integrado do Skilline ajuda a organizar a sua organização.</p>
         </div>
     </div>
 </section>
@@ -105,13 +103,13 @@
 <section class="bloc-skill">
   <div class="bloc-skill__wrapper">
     <h2 class="bloc-skill__title">
-      What is <span class="bloc-skill__title-highlight">Skilline?</span>
+      O que é a <span class="bloc-skill__title-highlight">Skilline?</span>
     </h2>
 
     <p class="bloc-skill__subtitle">
-      Skilline is a platform that allows educators to create online classes whereby they can
-      store the course materials online; manage assignments, quizzes and exams; monitor
-      due dates, grade results and provide students with feedback all in one place.
+      O Skilline é uma plataforma que permite aos educadores criar aulas online onde podem:
+armazenar o material do curso online; gerir tarefas, questionários e testes; monitorar
+prazos de entrega, notas e fornecer feedback aos alunos, tudo num só lugar.
     </p>
 
     <div class="bloc-skill__cards">
@@ -125,7 +123,7 @@
         <div class="skill-card__overlay skill-card__overlay--left">
           <h3 class="skill-card__heading">FOR INSTRUCTORS</h3>
           <button class="skill-card__btn skill-card__btn--light">
-            Start a class today
+            Comece uma aula hoje mesmo
           </button>
         </div>
       </article>
@@ -140,7 +138,7 @@
         <div class="skill-card__overlay skill-card__overlay--right">
           <h3 class="skill-card__heading">FOR STUDENTS</h3>
           <button class="skill-card__btn skill-card__btn--primary">
-            Enter access code
+            Introduza o código de acesso
           </button>
         </div>
       </article>
@@ -152,12 +150,12 @@
     <div class="info-bottom">
         <div class="info-bottom__text">
             <h2 class="info-bottom__title">
-                Everything you can do in a physical classroom, you can do with <span class="info-highlight">Skilline</span>
+                Tudo o que pode fazer numa sala de aula física, pode fazer com a <span class="info-highlight">Skilline</span>
             </h2>
             <p class="info-bottom__desc">
-                Skilline's school management software helps traditional and online schools manage scheduling, attendance, payments and virtual classrooms all in one secure cloud-based system.
+                O software de gestão escolar da Skilline ajuda as escolas tradicionais e online a gerir horários, assiduidade, pagamentos e salas de aula virtuais, tudo num sistema seguro baseado na nuvem.
             </p>
-            <a href="#" class="info-bottom__link">Learn more</a>
+            <a href="#" class="info-bottom__link">Saber mais</a>
         </div>
 
         <div class="info-bottom__image">
@@ -174,21 +172,21 @@
 
         <div class="feature-text">
             <h2 class="feature-title">
-                A user interface <span class="highlight-text">designed</span><br> for the classroom
+                A user interface <span class="highlight-text">desenhada</span><br> para a sala de aula
             </h2>
 
             <ul class="feature-list">
                 <li class="feature-item">
                     <div class="icon-square icon-blue-orange"></div>
-                    <p>Teachers don't get lost in the grid view and have a dedicated **Podium space**.</p>
+                    <p>Os professores não se perdem na visualização em grelha e têm um espaço dedicado no pódio.</p>
                 </li>
                 <li class="feature-item">
                     <div class="icon-square icon-orange-blue"></div>
-                    <p>T.A's and presenters can be moved to the **front of the class**.</p>
+                    <p>Os monitores e apresentadores podem ser deslocados para a frente da sala de aula.</p>
                 </li>
                 <li class="feature-item">
                     <div class="icon-square icon-person"></div>
-                    <p>Teachers can easily see all students and **class data** at one time.</p>
+                    <p>Os professores podem visualizar facilmente todos os alunos e os dados da turma ao mesmo tempo.</p>
                 </li>
             </ul>
         </div>
@@ -200,10 +198,10 @@
     <div class="tools-content">
         <div class="tools-text">
             <h2 class="tools-title">
-                <span class="highlight-text">Tools</span> For Teachers<br> And Learners
+                <span class="highlight-text">ferramentas</span> para professores<br> e estudantes
             </h2>
             <p class="tools-description">
-                Class has a **dynamic set of teaching tools** built to be deployed and used during class. Teachers can handout assignments in **real-time** for students to complete and submit.
+               O Class possui um conjunto dinâmico de ferramentas de ensino criadas para serem implementadas e utilizadas durante as aulas. Os professores podem distribuir as tarefas em tempo real para que os alunos as completem e enviem.
             </p>
         </div>
 
@@ -226,10 +224,10 @@
 
         <div class="assessments-text">
             <h2 class="assessments-title">
-                Assessments,<br> <span class="highlight-text">Quizzes</span>, Tests
+                Avaliações,<br> <span class="highlight-text">questionários</span>, Tests
             </h2>
             <p class="assessments-description">
-                Easily launch live assignments, quizzes, and tests. Student results are automatically entered in the online gradebook.
+                Crie facilmente tarefas, questionários e testes ao vivo. Os resultados dos alunos são automaticamente introduzidos no livro de notas online.
             </p>
         </div>
     </div>
@@ -240,10 +238,10 @@
     <div class="feature-block block-management">
         <div class="feature-text">
             <h2 class="feature-title">
-                <span class="highlight-text">Class Management</span><br> Tools for Educators
+                <span class="highlight-text">Gestão de turmas</span><br> Ferramentas para Educadores
             </h2>
             <p class="feature-description">
-                Class provides tools to help run and manage the class such as Class Roster, Attendance, and more. With the **Gradebook**, teachers can review and grade tests and quizzes in real-time.
+                O Class oferece ferramentas para ajudar a gerir a turma, como a lista de alunos, o controlo de assiduidade e muito mais. Com o livro de notas, os professores podem rever e corrigir testes e questionários em tempo real.
             </p>
         </div>
 
@@ -259,18 +257,17 @@
 
         <div class="feature-text">
             <h2 class="feature-title">
-                One-on-One<br> <span class="highlight-text">Discussions</span>
+                Discussões <br> <span class="highlight-text">um a um</span>
             </h2>
             <p class="feature-description">
-                Teachers and teacher assistants can talk with students privately without leaving the Zoom environment.
-            </p>
+                Os professores e os auxiliares de ação educativa podem conversar com os alunos em privado sem sair do ambiente Zoom.</p>
             
         </div>
     </div>
     
 
       <div class="cta-button-container">
-          <a href="#" class="btn-more-features">See more features</a>
+          <a href="#" class="btn-more-features">Ver mais funcionalidades</a>
       </div>
 
 </section>
@@ -299,16 +296,16 @@
         </div>
 
         <div class="integrations-text">
-            <p class="subtitle">INTEGRATIONS</p>
+            <p class="subtitle">INTEGRAÇÕES</p>
             <h2 class="integrations-title">
-                200+ educational tools and<br> platform <span class="highlight-text">integrations</span>
+            Mais de 200 ferramentas educativas e <span class="highlight-text">integrações</span> de plataformas
             </h2>
             <p class="integrations-description">
-                Schoology has every tool your classroom needs and comes pre-integrated with more than 200+ tools, student information systems (SIS), and education platforms.
-            </p>
+               O Schoology tem todas as ferramentas de que a sua sala de aula necessita e vem pré-integrado com mais de 200 ferramentas, sistemas de informação para estudantes (SIS) e plataformas educacionais.
+</p>
             
             <div class="cta-button-container">
-                <a href="#" class="btn-all-integrations">See All Integrations</a>
+                <a href="#" class="btn-all-integrations">Ver todas as integrações</a>
             </div>
         </div>
     </div>
@@ -319,20 +316,20 @@
     <div class="testimonials-content">
         
         <div class="testimonials-info">
-            <p class="subtitle">TESTIMONIAL</p>
-            <h2 class="testimonials-title">What They Say?</h2>
+            <p class="subtitle">DEPOIMENTO</p>
+            <h2 class="testimonials-title">O que dizem?</h2>
             
             <p class="testimonials-description">
-                Skilline has got more than **100k positive ratings** from our users around the world.<br>
-                Some of the students and teachers were greatly helped by the Skilline.
+                A Skilline recebeu mais de 100 mil avaliações positivas dos nossos utilizadores em todo o mundo. <br>
+Alguns alunos e professores foram muito ajudados pela Skilline.
             </p>
             
             <p class="testimonials-cta">
-                Are you too? **Please give your assessment**
+                Você também? Por favor, dê a sua opinião.
             </p>
 
             <a href="#" class="btn-write-assessment">
-                Write your assessment <span class="arrow-icon">→</span>
+               Escreva a sua avaliação <span class="arrow-icon">→</span>
             </a>
         </div>
 
@@ -345,8 +342,8 @@
 
 <section class="section-news-resources">
     <div class="news-header">
-        <h2 class="news-main-title">Lastest News and Resources</h2>
-        <p class="news-subtitle">See the developments that have occurred to Skillines in the world</p>
+        <h2 class="news-main-title">Últimas notícias e recursos</h2>
+        <p class="news-subtitle">Veja os desenvolvimentos que ocorreram com a Skillines no mundo.</p>
     </div>
 
     <div class="news-main-grid">
@@ -355,12 +352,12 @@
                 <img src="assets/img/zoom.png" alt="Pessoa em laptop participando de uma reunião de videochamada com uma xícara de café ao lado." class="responsive-image">
             </div>
             
-            <span class="news-tag">NEWS</span>
-            <h3 class="news-title">Class adds $30 million to its balance sheet for a Zoom-friendly edtech solution</h3>
+            <span class="news-tag">NOTÍCIAS</span>
+            <h3 class="news-title">Class acrescenta 30 milhões de dólares ao seu balanço para uma solução de tecnologia educativa compatível com o Zoom.</h3>
             <p class="news-description">
-                Class, launched less than a year ago by Blackboard co-founder Michael Chasen, integrates exclusively...
+                O Class, lançado há menos de um ano pelo cofundador do Blackboard, Michael Chasen, integra exclusivamente...
             </p>
-            <a href="#" class="news-link">Read more</a>
+            <a href="#" class="news-link">Leia mais</a>
         </article>
 
         <div class="news-secondary-list">
@@ -370,8 +367,8 @@
                     <img src="assets/img/kidsZoom.webp" alt="Pessoa segurando um tablet com a etiqueta 'PRESS RELEASE'." class="responsive-image">
                 </div>
                 <div class="news-text-content">
-                    <h3 class="news-title">Class Technologies Inc. Closes $30 Million Series A Financing to Meet High Demand</h3>
-                    <p class="news-description">Class Technologies Inc., the company that created Class...</p>
+                    <h3 class="news-title">Class Technologies Inc. conclui ronda de financiamento Série A de 30 milhões de dólares para satisfazer a elevada procura.</h3>
+                    <p class="news-description">A Class Technologies Inc., a empresa que criou o Class...</p>
                 </div>
             </article>
 
@@ -380,9 +377,9 @@
                     <img src="assets/img/zoom1.jpg" alt="Pessoa vista por trás em frente a um laptop mostrando uma tela de videochamada." class="responsive-image">
                 </div>
                 <div class="news-text-content">
-                    <h3 class="news-title">Zoom’s earliest Investors are betting millions on a better Zoom for schools</h3>
-                    <p class="news-description">Zoom was never created to be a consumer product. Nonetheless, the...</p>
-                    <span class="news-tag news-tag--small">NEWS</span>
+                    <h3 class="news-title">Os primeiros investidores do Zoom estão a apostar milhões numa versão melhorada do Zoom para as escolas.</h3>
+                    <p class="news-description">O Zoom nunca foi criado para ser um produto de consumo. No entanto, o...</p>
+                    <span class="news-tag news-tag--small">NOTÍCIAS</span>
                 </div>
             </article>
 
@@ -391,9 +388,9 @@
                     <img src="assets/img/class-for-zoom.png" alt="Tela de videochamada mostrando pessoas e um cachorro em uma sala de aula online." class="responsive-image">
                 </div>
                 <div class="news-text-content">
-                    <h3 class="news-title">Former Blackboard CEO Raises $16M to Bring LMS Features to Zoom Classrooms</h3>
-                    <p class="news-description">This year, investors have reaped big financial returns from betting on Zoom...</p>
-                    <span class="news-tag news-tag--small">NEWS</span>
+                    <h3 class="news-title">Ex-CEO da Blackboard angaria 16 milhões de dólares para levar recursos de LMS às salas de aula da Zoom.</h3>
+                    <p class="news-description">Este ano, os investidores obtiveram grandes retornos financeiros ao apostarem na Zoom...</p>
+                    <span class="news-tag news-tag--small">NOTÍCIAS</span>
                 </div>
             </article>
 
@@ -407,22 +404,22 @@
             <div class="footer-logo">
                 <img src="assets/img/footerlogo.png" alt="Skilline logo" class="logo-image">
             </div>
-            <p class="footer-subtitle">Virtual Class for Zoom</p>
+            <p class="footer-subtitle">Aula virtual pelo Zoom</p>
         </div>
 
         <div class="footer-newsletter">
-            <p class="newsletter-title">Subscribe to get our Newsletter</p>
+            <p class="newsletter-title">Subscreva a nossa newsletter para receber o boletim informativo.</p>
             <form class="newsletter-form">
                 <input type="email" placeholder="Your Email" class="email-input">
-                <button type="submit" class="subscribe-btn">Subscribe</button>
+                <button type="submit" class="subscribe-btn">Inscreva-se</button>
             </form>
         </div>
 
         <div class="footer-bottom">
             <div class="footer-links">
-                <a href="#">Careers</a>
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms & Conditions</a>
+                <a href="#">Carreiras</a>
+                <a href="#">Política de privacidade</a>
+                <a href="#">Termos e condições</a>
             </div>
             <p class="footer-copyright">
                 © 2021 Class Technologies Inc.
@@ -435,8 +432,28 @@
 
 <script>
 function toggleMenu() {
-    document.getElementById('navMenu').classList.toggle('open');
+    // 1. Pega o elemento que contém a navegação e os botões
+    const navLinks = document.getElementById('navRightLinks');
+    
+    // 2. Adiciona ou remove a classe 'active'
+    // A classe 'active' é a que aplica os estilos de menu aberto no CSS
+    navLinks.classList.toggle('active');
 }
+
+// Opcional: Fechar o menu ao clicar em um link
+document.addEventListener('DOMContentLoaded', () => {
+    const navLinksContainer = document.getElementById('navRightLinks');
+    const links = navLinksContainer.querySelectorAll('a');
+
+    links.forEach(link => {
+        link.addEventListener('click', () => {
+            // Remove a classe 'active' após o clique (apenas se estiver em modo mobile)
+            if (window.innerWidth <= 900) {
+                navLinksContainer.classList.remove('active');
+            }
+        });
+    });
+});
 </script>
 
 </body>
